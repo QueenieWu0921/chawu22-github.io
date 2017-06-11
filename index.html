@@ -1,0 +1,515 @@
+<HTML>
+<HEAD> 
+	<TITLE> Stray Dog Problems </TITLE>
+	<STYLE type='text/css'>
+	#Instruction1 {
+		position: absolute;
+		top: 535;
+		left: 410;
+		color: red;
+		font-size: 30px;
+		z-index: 10;
+	}
+
+	#circle1 {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 350;
+	top:700;
+	background: deepskyblue;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Chrome, Safari, Opera */
+    transform: scale(3);
+    z-index: 10;
+	}
+
+	#circle2 {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 850;
+	top:700;
+	background: hotpink;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Chrome, Safari, Opera */
+    transform: scale(3);
+    z-index: 10;
+	}
+
+	#circle3 {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 350;
+	top: 1050;
+	background: yellow;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Chrome, Safari, Opera */
+    transform: scale(3);
+    z-index: 10;
+	}
+
+	#circle4 {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 850;
+	top: 1050;
+	background: blueviolet;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Chrome, Safari, Opera */
+    transform: scale(3);
+    z-index: 10;
+	}
+
+	#Title {
+		position: absolute;
+		left: 280;
+		top: 10;
+		font-size: 150px;
+		color: red;
+		font-family: Georgia;
+		z-index: 10;
+	}
+
+	#Topic1 {
+		position: absolute;
+		left: 290;
+		top: 690;
+		font-size: 45px;
+		color: F9A708;
+		font-family: Georgia;
+		z-index: 10;
+	}
+
+	#Topic2 {
+		position: absolute;
+		left: 780;
+		top: 665;
+		font-size: 45px;
+		color: F9A708;
+		font-family: Georgia;
+		z-index: 10;
+	}
+
+	#Topic3 {
+		position: absolute;
+		left: 260;
+		top: 1070;
+		font-size: 45px;
+		color: F9A708;
+		font-family: Georgia;
+		z-index: 10;
+	}
+
+	#Topic4 {
+		position: absolute;
+		left: 810;
+		top: 1070;
+		font-size: 45px;
+		color: F9A708;
+		font-family: Georgia;
+		z-index: 10;
+	}
+
+	#rectangle1 {
+		position: absolute;
+		top: 1350;
+		left: 220;
+		width: 270px;
+		height: 350px; 
+		background: lavender;
+		z-index: 10;
+	}
+
+	#rectangle2 {
+		position: absolute;
+		top: 1350;
+		left: 520;
+		width: 270px;
+		height: 350px; 
+		background: lavender;
+		z-index: 10;
+	}
+
+	#rectangle3 {
+		position: absolute;
+		top: 1350;
+		left: 820;
+		width: 270px;
+		height: 350px; 
+		background: lavender;
+		z-index: 10;
+	}
+
+	#Content1 {
+		opacity: 0;
+		position: absolute;
+		top: 780;
+		left: 360;
+		z-index: 20;
+		font-size: 25px;
+		color: white;
+	}
+
+	#Box1 {
+		position: absolute;
+		top: 780;
+		left: 340;
+		z-index:15;
+		width: 630px;
+	height: 300px;
+	background: black;
+		opacity: 0;
+	}
+
+	#Content2 {
+		position: absolute;
+		top: 725;
+		left: 635;
+		z-index: 20;
+		font-size: 25px;
+		color: white;
+		opacity: 0;
+	}
+
+	#Box2 {
+		position: absolute;
+		top: 720;
+		left: 230;
+		z-index: 15;
+		width: 840px;
+	height: 370px;
+		background: black;
+		opacity: 0;
+	}
+
+	#Content3 {
+		position: absolute;
+		top: 810;
+		left: 360;
+		z-index: 20;
+		font-size: 25px;
+		color: white;
+		opacity: 0;
+	}
+
+	#Box3 {
+		position: absolute;
+		top: 800;
+		left: 338;
+		z-index: 15;
+		width: 660px;
+	height: 230px;
+		background: black;
+		opacity: 0;
+	}
+
+	#Content4 {
+		position: absolute;
+		top: 810;
+		left: 230;
+		z-index: 20;
+		font-size: 25px;
+		color: white;
+		opacity: 0;
+	}
+
+	#Box4 {
+		position: absolute;
+		top: 800;
+		left: 200;
+		z-index: 15;
+		width: 920px;
+	height: 250px;
+		background: black;
+		opacity: 0;
+	}
+
+	#Picture1 {
+		position: absolute;
+		top: 770;
+		left: 250;
+		z-index: 20;
+		opacity: 0;
+	}
+
+	#rectangle4 {
+		position: absolute;
+		top: 1270;
+		width: 1280px;
+		height: 5px; 
+		background: black;
+		z-index: 10
+	}
+
+	#OtherLinks {
+		position: absolute;
+		top: 1290;
+		left: 360;
+		font-size: 30px;
+		color: red;
+		z-index: 10
+	}
+
+	#Link1 {
+		position: absolute;
+		top: 1590;
+		left: 250;
+		z-index: 10;
+		font-size: 28px;
+	}
+
+	#LinkPicture1 {
+		position: absolute;
+		top: 1410;
+		left: 220;
+		z-index: 10;
+	}
+
+	#LinkTitle1 {
+		position: absolute;
+		top: 1355;
+		left: 290;
+		z-index: 10;
+		font-size: 40px;
+		color: 000000;
+	}
+
+	#Link2 {
+		position: absolute;
+		top: 1610;
+		left: 555;
+		z-index: 20;
+		font-size: 28px;
+	}
+
+	#LinkPicture2 {
+		position: absolute;
+		top: 1410;
+		left: 520;
+		z-index: 20;
+	}
+
+	#LinkTitle2 {
+		position: absolute;
+		top: 1355;
+		left: 555;
+		z-index: 20;
+		font-size: 40px;
+		color: 000000;
+	}
+
+	#Link3 {
+		position: absolute;
+		top: 1560;
+		left: 840;
+		z-index: 20;
+		font-size: 28px;
+	}
+
+	#LinkPicture3 {
+		position: absolute;
+		top: 1410;
+		left: 820;
+		z-index: 20;
+	}
+
+	#LinkTitle3 {
+		position: absolute;
+		top: 1355;
+		left: 830;
+		z-index: 20;
+		font-size: 40px;
+		color: 000000;
+	}
+
+	#rectangle5 {
+		position: absolute;
+		top: 1750;
+		width: 1280px;
+		height: 5px; 
+		background: black;
+		z-index: 10;
+	}
+
+	#Introduce {
+		position: absolute;
+		top: 1770;
+		left: 510;
+		color: blue;
+		font-size: 40px;
+		z-index: 10;
+	}
+
+	#MyPhoto {
+		position: absolute;
+		top: 1840;
+		left: 160;
+		z-index: 10;
+	}
+
+	#IntroduceText {
+		position: absolute;
+		top: 1880;
+		left: 600;
+		font-size: 30px;
+		color: blueviolet;
+		z-index: 10;
+	}
+
+	#heart {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    top: 2100;
+    left: 780;
+    transform: scale(2);
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: deeppink;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+	}
+
+	#rectangle6 {
+		position: absolute;
+		top: 2300;
+		width: 1280px;
+		height: 100px; 
+		background: white;
+	}
+	
+	#rectangle7 {
+		position: absolute;
+		top: 520;
+		left: 0;
+		width: 1280;
+		height: 720; 
+		background: white;
+		z-index: 0;
+	}
+
+
+</STYLE>
+</HEAD>
+<BODY>
+	<DIV id=Instruction1> Click onto the titles to view the contents! </DIV>
+	<DIV id=circle1 onclick= "document.getElementById('Content1').style.opacity='1';document.getElementById('Box1').style.opacity='1'; document.getElementById('Content2').style.opacity='0';document.getElementById('Box2').style.opacity='0'; document.getElementById('Picture1').style.opacity='00'; document.getElementById('Content3').style.opacity='0';document.getElementById('Box3').style.opacity='0'; document.getElementById('Content4').style.opacity='0';document.getElementById('Box4').style.opacity='0'; "> </DIV>
+	<DIV id=circle2 onclick= "document.getElementById('Content1').style.opacity='0';document.getElementById('Box1').style.opacity='0'; document.getElementById('Content2').style.opacity='1';document.getElementById('Box2').style.opacity='1'; document.getElementById('Picture1').style.opacity='1'; document.getElementById('Content3').style.opacity='0';document.getElementById('Box3').style.opacity='0'; document.getElementById('Content4').style.opacity='0';document.getElementById('Box4').style.opacity='0';"> </DIV>
+	<DIV id=circle3> </DIV>
+	<DIV id=circle4> </DIV>
+
+	<DIV id=Title> Stray Dogs </DIV> 
+
+	<DIV id=Topic1 onclick= "document.getElementById('Content1').style.opacity='1';document.getElementById('Box1').style.opacity='1'; document.getElementById('Content2').style.opacity='0';document.getElementById('Box2').style.opacity='0'; document.getElementById('Picture1').style.opacity='00'; document.getElementById('Content3').style.opacity='0';document.getElementById('Box3').style.opacity='0'; document.getElementById('Content4').style.opacity='0';document.getElementById('Box4').style.opacity='0'; "> About This
+	<BR>   Website </DIV>
+	<DIV id=Content1> This website is about stray dogs for people above 10 years <BR> old. The 
+	website will contain important information such as <BR> where the stray dogs usually come from, consequences of <BR> having too many stray dogs, and the solution to decrease <BR> the amount of stray dogs. The purpose I’m making this <BR> website is to hope people to be aware of the problem of <BR> stray dogs and to tell them that dogs are not a toy for them, <BR> they’re here to be taken care, not to be abandoned by <BR> humans. Hope you enjoy reading my website! :) </DIV> 
+	<DIV id=Box1> </DIV>
+
+	<DIV id=Topic2 onclick= "document.getElementById('Content1').style.opacity='0';document.getElementById('Box1').style.opacity='0'; document.getElementById('Content2').style.opacity='1';document.getElementById('Box2').style.opacity='1'; document.getElementById('Picture1').style.opacity='1'; document.getElementById('Content3').style.opacity='0';document.getElementById('Box3').style.opacity='0'; document.getElementById('Content4').style.opacity='0';document.getElementById('Box4').style.opacity='0';"> Where Stray <BR> Dogs Come <BR> From  </DIV>
+	<DIV id=Content2> 
+	<UL>
+	Stray dogs:
+	<BR> </BR>
+		<UL>
+			<LI> Owned </LI>
+				<UL> 
+					<LI> Fed by locals in a certain area <BR> but have no named owner <BR> (community dogs) </LI>
+				</UL>
+			<LI> Unowned </LI>
+				<UL> 
+					<LI> Abandoned by original owners </LI>
+					<LI> Get lost </LI>
+					<LI> Birth from stray dog parents </LI>
+				</UL>
+		</UL>
+	</DIV>
+	<DIV id=Box2> </DIV>
+	<DIV id=Picture1> <IMG src="Straydog.jpg" width=400> </IMG> </DIV>
+
+	<DIV id=Topic3 onclick= "document.getElementById('Content1').style.opacity='0';document.getElementById('Box1').style.opacity='0'; document.getElementById('Content2').style.opacity='0';document.getElementById('Box2').style.opacity='0'; document.getElementById('Picture1').style.opacity='0'; document.getElementById('Content3').style.opacity='1';document.getElementById('Box3').style.opacity='1'; document.getElementById('Content4').style.opacity='0';document.getElementById('Box4').style.opacity='0'; "> Consequences </DIV>
+	<DIV id=Content3> Some consequences if we don’t stop this problem are: dogs <BR> get hit by cars easily while wandering on streets, and the dirty <BR> living conditions can make them ill and really painful. Also, if <BR> there are too many dogs, the government might start the <BR> "Euthanasia Progam", which they'll inject medicinces into the <BR> dogs' body. Then the dogs will slowly die without pain. </DIV>
+	<DIV id=Box3> </DIV>
+
+	<DIV id=Topic4 onclick= "document.getElementById('Content1').style.opacity='0';document.getElementById('Box1').style.opacity='0'; document.getElementById('Content2').style.opacity='0';document.getElementById('Box2').style.opacity='0'; document.getElementById('Picture1').style.opacity='0'; document.getElementById('Content3').style.opacity='0';document.getElementById('Box3').style.opacity='0'; document.getElementById('Content4').style.opacity='1';document.getElementById('Box4').style.opacity='1'; "> Solutions </DIV>
+	<DIV id=Content4> To solve this problem, people need to have more thoughtful minds before they actually <BR> buy a dog, they need to think all over if they have the ability to take care of them, and <BR> whether they have the determined mind to take care them until they die. Also, people <BR> should try not to buy the dogs in a dog store but adopt a stray dog so that the dog store <BR> will stop trying to make more puppies on purpose to sell. Nowadays, the most popular <BR> way the government decreases the amount of dog is to apply the CNR program to them <BR> which includes killing stray dogs. </DIV>
+	<DIV id=Box4> </DIV> 
+
+	<DIV id=rectangle1> </DIV> 
+	<DIV id=rectangle4> </DIV> 
+
+	<DIV id=OtherLinks> Click onto the links to know more about dogs! </DIV>
+
+	<DIV id=Link1> <A href="http://www.doctordog.org.tw/english/main.asp" target=_blank> http://www.doctor <BR> dog.org.tw/english <BR> /main.asp </A> </DIV> 
+	<DIV id=LinkPicture1> <IMG src="Dr. Dog.jpg" width=270> </IMG> </DIV>
+	<DIV id=LinkTitle1> Dr. Dog </DIV>
+
+	<DIV id=Link2> <A href="https://www.igdf.org.uk/" target=_blank> https://www.igdf. <BR> org.uk/ </A> </DIV>
+	<DIV id=LinkPicture2> <IMG src="guidedog.jpg" width=270> </IMG> </DIV>
+	<DIV id=LinkTitle2> Guide Dogs </DIV>
+
+	<DIV id=Link3> <A href="https://goo.gl/8jsLcj" target="_blank"> https://goo.gl/8jsLcj </A> </DIV>
+	<DIV id=LinkPicture3> <IMG src="barking.jpg" width=270> </IMG> </DIV>
+	<DIV id=LinkTitle3> Dogs' Behavior </DIV>
+
+	<DIV id=rectangle2> </DIV>
+	<DIV id=rectangle3> </DIV>
+	<DIV id=rectangle5> </DIV>
+	<DIV id=Introduce> About The Author </DIV>
+	<DIV id=MyPhoto> <IMG src="ME.jpg" width="350"> </IMG> </DIV>
+	<DIV id=IntroduceText> Queenie is a 12 years old girl who likes <BR> to play sports. This website page is her first <BR> project on coding websites. She hopes that <BR> you'll like her website. Enjoy it!! </DIV> 
+	<DIV id=heart> </DIV>
+	<DIV id=rectangle6> </DIV>
+	<DIV id=rectangle7 onclick= "document.getElementById('Content1').style.opacity='0';document.getElementById('Box1').style.opacity='0'; document.getElementById('Content2').style.opacity='0';document.getElementById('Box2').style.opacity='0'; document.getElementById('Picture1').style.opacity='0'; document.getElementById('Content3').style.opacity='0';document.getElementById('Box3').style.opacity='0'; document.getElementById('Content4').style.opacity='0';document.getElementById('Box4').style.opacity='0'; "> </DIV>
+	<DIV id=rectangle8 onclick= "document.getElementById('Content1').style.opacity='0';document.getElementById('Box1').style.opacity='0'; document.getElementById('Content2').style.opacity='0';document.getElementById('Box2').style.opacity='0'; document.getElementById('Picture1').style.opacity='0'; document.getElementById('Content3').style.opacity='0';document.getElementById('Box3').style.opacity='0'; document.getElementById('Content4').style.opacity='0';document.getElementById('Box4').style.opacity='0'; "> </DIV>
+	<DIV id=rectangle9> </DIV>
+	<CENTER>
+	<IMG src="Straydog1.jpg" width=1000 onmouseover = "src = 'Straydog2.jpg'" width=1000 onmouseout = "src = 'Straydog1.jpg'"> </IMG> 
+	</CENTER> 
+	</BODY>
+</HTML>
